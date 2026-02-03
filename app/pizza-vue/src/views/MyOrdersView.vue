@@ -67,7 +67,7 @@ const loadOrders = async () => {
 
   try {
     const { data } = await api.get('/narudzbe')
-    narudzbe.value = Array.isArray(data) ? data : []
+    narudzbe.value = Array.isArray(data) ? data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) : []
   } catch (err) {
     error.value = err.response?.data?.error || 'Greška pri dohvaćanju narudžbi.'
   } finally {
