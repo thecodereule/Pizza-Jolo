@@ -176,7 +176,7 @@ const search = reactive({
   sort: '',
 })
 
-const URL_express = 'http://localhost:3000'
+const URL_express = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 
 const ikoneSastojaka = {
   rajčica: 'gi-tomato',
