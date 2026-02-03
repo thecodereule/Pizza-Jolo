@@ -58,7 +58,7 @@ const route = useRoute()
 const pizza = ref(null)
 const ucitavanje = ref(true)
 const greska = ref(null)
-const URL_express = 'http://localhost:3000'
+const URL_express = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 
 onMounted(async () => {
   try {
