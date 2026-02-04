@@ -4,6 +4,7 @@ Pizza ordering web app with Vue.js frontend, Node.js/Express backend, MongoDB, J
 
 ## Test account:
 test_user
+
 test_password
 
 ## Tech Stack
